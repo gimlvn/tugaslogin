@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coloum</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #788bf6;
+    }
+
+    header {
+      background: #788bf6;
+      color: rgb(6, 6, 6);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+    }
+
+    .column {
+      background:gainsboro;
+      padding: 20px;
+      flex: 1;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .column h3 {
+      margin-top: 0;
+      color: #0b0c0b;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+    .logout-buton{
+        border: 2px;
+        position:absolute;
+        top: 20px;
+        right: 20px;
+        background: green;
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+.logout-button:hover {
+      background: #c62828;
+    }
+
+.logout-center {
+    text-align: center;
+    margin-top: 20px;
+    box-sizing: 50px;
+
+ }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang Guys</h1>
+    <p>Login Berhasil Yeayy</p>
+  </header>
+
+  <div class="container">
+    <div class="column">
+      <h3>Sejarah komputer</h3>
+      <p>Sejarah komputer dimulai dengan konsep mesin 
+        hitung mekanis dan berkembang melalui berbagai 
+        generasi, mulai dari tabung vakum hingga sirkuit 
+        terpadu dan mikroprosesor. Perkembangan komputer 
+        modern didorong oleh inovasi dalam bidang perangkat
+         keras dan perangkat lunak, serta kebutuhan akan
+          pemrosesan data yang lebih cepat dan efisien. </p>
+    </div>
+    <div class="column">
+      <h3>sejarah handphone</h3>
+      <p>Handphone, atau telepon seluler, pertama kali 
+        dikembangkan pada tahun 1973 oleh Martin Cooper 
+        dari Motorola. Inovasi ini kemudian berkembang 
+        pesat, menghadirkan berbagai generasi teknologi 
+        seluler mulai dari 1G hingga 5G yang kita kenal 
+        sekarang. Ponsel telah berevolusi dari perangkat 
+        besar dan mahal menjadi perangkat yang lebih kecil, 
+        lebih canggih, dan terjangkau. </p>
+    </div>
+    <div class="column">
+      <h3>sejarah televisi</h3>
+      <p>Televisi adalah media elektronik yang berfungsi
+         sebagai sarana edukasi, informasi, maupun hiburan.
+          Sejarah televisi berawal dari penemuannya sekitar 
+          abad ke-18. Zaini dalam penelitiannya bertajuk 
+          Dakwah melalui Televisi mengungkapkan jika televisi
+           pertama kali ditemukan oleh Paul Nipkow asal 
+           Jerman di tahun 1884.</p>
+    </div>
+  </div>
+  <div class="logout-center">
+ <a href="index1.html" class="logout-button"><button type="reset">Logout</button></a>
+ </div>
+</body>
+</html>
